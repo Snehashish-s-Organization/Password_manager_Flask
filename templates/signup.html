@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+    
+
+    body{
+      background-color: whitesmoke;
+    }
+
+    .jumbotron{
+      width: auto;
+      margin: 10%;
+/*      position: fixed;*/
+      
+    }
+    #carouselExampleIndicators{
+      max-height: 50%;
+      max-width: 100%;
+    }
+    .fa-fa-Form{
+      width: auto;
+      margin-left: 30%;
+      margin-right: 30%;
+      margin-top: 10%;
+      margin-bottom: 10%;
+      padding: 5%;
+      background-color: whitesmoke;
+      border-radius:10px;
+    }
+
+  </style>
+
+  <title>Snehashish</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body style = "background: -webkit-linear-gradient(left, #54a0ff, #2ecc71);">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Password Man</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Source Code</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Dashboard</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<form class = "fa-fa-Form" method = "POST" action = "#">
+  <h2 style = "padding: 0; margin-bottom: 3.5%;">Signup For Password Mana </h2>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Username</label>
+    <input type="text" name = "username" style = "height: 45px" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Username">
+    <small id="emailHelp" style = "color: red;" class="form-text text-muted">{{logmsg}}</small>
+  </div>
+  <div class="form-group">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" name = "email" style = "height: 45px" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" style = "color: red;" class="form-text text-muted">{{logmsg}}</small>
+    </div>
+    <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" name = "password" placeholder="Enter Password"style = "height: 45px" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    <small id="emailHelp" style = "color: red;" class="form-text text-muted">{{sigmesg}}</small>
+  </div>
+  
+  <small id="emailHelp"style = "margin-bottom: 5px;" class="form-text text-muted">Or click here to <a href="/login">Login</a></small>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
