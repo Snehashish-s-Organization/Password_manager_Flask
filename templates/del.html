@@ -4,7 +4,7 @@
   <style type="text/css">
     
 
-    body{
+    .body{
       background-color: whitesmoke;
     }
 
@@ -25,13 +25,33 @@
       background-color: whitesmoke;
       border-radius:10px;
     }
+    #data{
+      width:70%;
+      margin-left: 15%;
+      margin-right: 15%;
+      padding: 10px;
+      justify-content:center;
+      left: 50%;
+      right: 50%;
+      padding: 50px;
+      margin-top: 10%;
+      background-color: whitesmoke;
+      
 
+    }
+    .myform{
+      width:45%;
+      padding: 20px;
+      margin-left: 25%;;
+      background-color: white;
+      margin-top: 10%;
+    }
   </style>
 
   <title>Snehashish</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-<body style = "background: -webkit-linear-gradient(left, #54a0ff, #2ecc71);">
+<body class = "body">
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">Password Man</a>
@@ -50,25 +70,32 @@
         <a class="nav-link" href="#">Dashboard</a>
       </li>
     </ul>
-    
+      <form class="form-inline">
+<!--     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name = "logbutton">{{logmsg}}</button>
+  </form>
   </div>
-
 </nav>
-
-<div class="jumbotron">
-  <h1 class="display-4">Hello, world!</h1>
-  <p class="lead">
-    These Days everyone needs Secure and Long Passwords. Now to make your remembering Job easy
-    here is service for you to manage your passwords called Password Man
-
-   </p>
-  <hr class="my-4">
-  <p>Click the button below To start using this for some secure password management:</p>
-  <p class="lead">
-    <a class="btn btn-primary btn-lg" href="/signup" role="button">Check this out</a>
-  </p>
-</div>
-
+<form class=  "myform" method = "POST" action = "#">
+  {% if typ == "red" %}
+    <div class="alert alert-danger" role="alert">
+      {{ msg }}
+    </div>
+  {% elif typ == "none" %}
+  <div class="alert alert-success" role="alert" style = "display:none;">
+    Password successfully Deletd <a href = "/home">click here</a> to go back to dahboard
+  </div>
+  {% else %}
+  <div class="alert alert-success" role="alert">
+    Password successfully Deleted <a href = "/home">click here</a> to go back to dahboard
+  </div>
+   {% endif %} 
+  <div class="form-group">
+    <label for="exampleInputEmail1">Name of the Site You wanna remove</label>
+    <input type="text" class="form-control" name = "name" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Sitename">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

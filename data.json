@@ -1,64 +1,81 @@
 [
     {
-        "username": "Snehashish",
-        "email": "snehashish.laskar@gmail.com",
-        "password": "snehashish",
-        "ips": [],
-        "data": []
-    },
-    {
-        "username": "Snehashish",
-        "email": "snehashish.laskar@gmail.com",
-        "password": "snehashish",
-        "ips": [],
-        "data": []
-    },
-    {
-        "username": "Snehashish",
-        "email": "snehashish.laskar@gmail.com",
-        "password": "snehashish",
-        "ips": [],
-        "data": []
-    },
-    {
-        "username": "Snehashish",
-        "email": "snehashish.laskar@gmail.com",
-        "password": "snehashish",
-        "ips": [],
-        "data": []
-    },
-    {
-        "username": "Snehashish",
-        "email": "snehashish.laskar@gmail.com",
-        "password": "snehashish",
-        "ips": [],
-        "data": []
-    },
-    {
         "username": "snehashish",
         "email": "snehashishlaskar.workemail@gmail.com",
-        "password": "lol",
-        "ips": [],
-        "data": []
-    },
-    {
-        "username": "snehashish090",
-        "email": "snehashish.laskar@gmail.com",
         "password": "snehashish08036",
         "ips": [],
-        "data": []
+        "data": [
+            {
+                "site": "lol",
+                "used": "lol",
+                "password": "lol"
+            },
+            {
+                "site": "lol2",
+                "used": "lol",
+                "password": "lol"
+            },
+            {
+                "site": "lol9",
+                "used": "lol",
+                "password": "lol"
+            },
+            {
+                "site": "Rashmi",
+                "used": "snehashish.laskar@gmail.com",
+                "password": "lol"
+            },
+            {
+                "site": "Google 1",
+                "used": "snehashish@lol",
+                "password": "snehashish08036"
+            },
+            {
+                "site": "python",
+                "used": "snehashish.laskar@gmail.com",
+                "password": "lol"
+            },
+            {
+                "site": "snehamoy",
+                "used": "snehashishlaskar.workemail@gmail.com",
+                "password": "snehashish"
+            },
+            {
+                "site": "rashmi",
+                "used": "snehashish@lol",
+                "password": "lol"
+            },
+            {
+                "site": "ishan-ka-test",
+                "used": "snehashish.laskar@gmail.com",
+                "password": "snehashish"
+            }
+        ]
     },
     {
-        "username": "rashmi.adlekha",
-        "email": "snehashish.laskar@gmail.com",
-        "password": "12345",
+        "username": "testsnehashish",
+        "email": "snehashishlaskar.workemail@gmail.com",
+        "password": "snehashish",
         "ips": [],
         "data": []
     },
     {
-        "username": "Snehamoy",
-        "email": "snehamoy@gna",
-        "password": "123445678910",
+        "username": "ShivTheBest",
+        "email": "snehashishlaskar.workemail@gmail.com",
+        "password": "12345",
+        "ips": [],
+        "data": [
+            {
+                "site": "python",
+                "used": "snehashishlaskar.workemail@gmail.com",
+                "password": "snehashih"
+            }
+        ]
+    },
+    {
+        "username": "shiv",
+        "email": "snehashish@lol",
+        "password": "snehashish",
         "ips": [],
         "data": []
     }
